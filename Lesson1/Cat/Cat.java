@@ -66,15 +66,16 @@ public class Cat {
 
 	
 	public void meow() {
-		System.out.println("MEEEOW!!!");
+		System.out.println(this.name + ": MEEEOW!!!");
 	}
 
-	public void stealfood(String food) {
+	public static void stealfood(String food) {
 		System.out.println(food + " stolen! yummy-yummy");
 	}
 	
 	public void sterilize() {
 		sterilization = true;
+		System.out.println(this.name + ": OUCH! :(");
 	}
 	
 
