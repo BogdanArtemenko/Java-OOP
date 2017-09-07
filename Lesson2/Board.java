@@ -14,6 +14,13 @@ public class Board {
 		// TODO Auto-generated constructor stub
 	}
 	
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	
 	public void addShape(Shape shape, int part) {
 		int i = part -1; 
 			if(shapeArray[i] == null) {
