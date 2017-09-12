@@ -39,7 +39,7 @@ public class Group {
 
 	public void sortGroup() {
 		Student maxStudent;
-		int posMin;
+		int posMax;
 
 		// moves null values to the end of array
 		for (int i = 0; i < studentsArray.length - 1; i++) {
@@ -54,7 +54,7 @@ public class Group {
 		// sort array by student name finding max value
 		for (int i = 0; i < studentsArray.length - 1; i++) {
 			maxStudent = studentsArray[i];
-			posMin = i;
+			posMax = i;
 			for (int j = i + 1; j < studentsArray.length; j++) {
 				if (studentsArray[j] != null
 						&& maxStudent
@@ -64,10 +64,10 @@ public class Group {
 										studentsArray[j].getName()
 												.toUpperCase()) > 0) {
 					maxStudent = studentsArray[j];
-					posMin = j;
+					posMax = j;
 				}
 			}
-			studentsArray[posMin] = studentsArray[i];
+			studentsArray[posMax] = studentsArray[i];
 			studentsArray[i] = maxStudent;
 		}
 
